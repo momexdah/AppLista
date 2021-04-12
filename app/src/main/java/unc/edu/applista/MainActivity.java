@@ -30,6 +30,39 @@ public class MainActivity extends ListActivity {
     @Override
     protected void onResume(){
         super.onResume();
+        Log.d("Estado","Ejecución");
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+        Log.d("Estado","Pausado");
+
+    }
+
+    @Override
+    protected void onStop(){
+        super.onStop();
+        Log.d("Estado","Detenido");
+        if(isFinishing())
+            Log.d("Estado","Finalización");
+    }
+
+    @Override
+    protected void onRestart(){
+        super.onRestart();
+        Log.d("Estado","Reinicio");
+    }
+    @Override
+    protected void onStart(){
+        super.onStart();
+        Log.d("Estado","Inicio");
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.d("Estado","Finalización");
     }
 
 
