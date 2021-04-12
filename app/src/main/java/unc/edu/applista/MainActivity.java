@@ -44,8 +44,8 @@ public class MainActivity extends ListActivity {
     protected void onStop(){
         super.onStop();
         Log.d("Estado","Detenido");
-        if(isFinishing())
-            Log.d("Estado","Finalización");
+        //if(isFinishing())
+          //  Log.d("Estado","Finalización");
     }
 
     @Override
